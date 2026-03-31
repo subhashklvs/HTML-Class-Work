@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Glow Beauty - Cosmetics</title>
+<style>
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 100px; /* fixes header overlap */
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden; /* fixes zigzag scroll */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #fff0f5;
+}
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255, 77, 109, 0.95);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+header h1 {
+  margin: 0;
+}
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+.hero {
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9') no-repeat center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+.container {
+  padding: 120px 20px 20px;
+}
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 15px;
+  text-align: center;
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.price {
+  color: #ff4d6d;
+  font-weight: bold;
+  margin: 10px 0;
+}
+button {
+  background: #ff4d6d;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background: #e63950;
+}
+.review {
+  background: #ffe5ec;
+  padding: 60px 20px;
+  text-align: center;
+}
+.review img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.subscribe {
+  background: #ff4d6d;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+.subscribe input {
+  padding: 10px;
+  width: 250px;
+  border: none;
+  border-radius: 5px;
+}
+.subscribe button {
+  margin-left: 10px;
+}
+footer {
+  background: #e63950;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+</style>
+</head>
+<body id="top">
+
+<header>
+  <h1>Glow Beauty</h1>
+  <nav>
+    <a href="#top">Home</a>
+    <a href="#products">Products</a>
+    <a href="#products">Store</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+  </div>
+</section>
+
+<div class="container" id="products">
+  <h2>Our Products</h2>
+  <div class="products">
+
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH1LvXu63Zj6w75qbAVwzYQFYmrFKSX9NgfdR7f7ld7A&s=10">
+      <h3>Matte Lipstick</h3>
+      <p>Long-lasting and smooth finish.</p>
+      <div class="price">₹499</div>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348">
+      <h3>Liquid Foundation</h3>
+      <p>Perfect coverage for all skin types.</p>
+      <div class="price">₹799</div>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzpSCRcIoelx8_WHzpiZcXRx6MimF8s6k5LQ&s">
+      <h3>Luxury Perfume</h3>
+      <p>Fresh and long-lasting fragrance.</p>
+      <div class="price">₹1299</div>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd">
+      <h3>Face Serum</h3>
+      <p>Brightens and smoothens your skin.</p>
+      <div class="price">₹699</div>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908">
+      <h3>Compact Powder</h3>
+      <p>Lightweight with flawless finish.</p>
+      <div class="price">₹399</div>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5">
+      <h3>Makeup Kit</h3>
+      <p>All-in-one beauty essentials.</p>
+      <div class="price">₹1499</div>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7Nl5Nl3KftnfMVcpcbtuVReBujzwctnOFcF1Y0bz_FQ&s=10">
+      <h3>BB Cream</h3>
+      <p>Light coverage with skincare benefits.</p>
+      <div class="price">₹549</div>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJRcjEy4HoxzNn2zMapREXMfWaQ1w1qKDxTvKsRxTl5g&s=10">
+      <h3>Eyebrow Pencil</h3>
+      <p>Define and shape your brows perfectly.</p>
+      <div class="price">₹299</div>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrXviASHK7TcM9VV1GR3iMCcSlSOGrs3t_JbsdlIM1zw&s=10">
+      <h3>Nail Polish</h3>
+      <p>Glossy and vibrant nail colors.</p>
+      <div class="price">₹199</div>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvbRmBqC4GUzInfHVNVnNli1LVmCpG3cwxuBa6erTFPQ&s=10">
+      <h3>Hair Serum</h3>
+      <p>Smooth and shiny hair instantly.</p>
+      <div class="price">₹649</div>
+      <button>Buy Now</button>
+    </div>
+
+  </div>
+</div>
+
+<section class="review">
+  <h2>Customer Review</h2>
+  <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1">
+  <p>"Absolutely love the products! My skin feels incredible — soft, smooth, and radiant every day. I've noticed a real difference in my skin's glow and overall health since I started using them. I highly recommend these products to anyone looking to improve their skincare routine and achieve luminous, healthy skin. Truly a game-changer!."</p>
+  <h4>- Priya Sharma</h4>
+</section>
+
+<section class="subscribe" id="contact">
+  <h2>Subscribe for Updates</h2>
+  <p>Enter your email to get latest offers</p>
+  <input type="email" placeholder="Enter your email">
+  <button>Subscribe</button>
+</section>
+
+<footer>
+  <p>© 2026 Glow Beauty | All Rights Reserved</p>
+  <p>📧 support@glowbeauty.com</p>
+  <p>📞 +91 98765 43210</p>
+</footer>
+
+</body>
+</html>
