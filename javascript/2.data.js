@@ -1,93 +1,96 @@
-let number = 20;
-number = 25;
-//let number = 20;
-console.log(number)
-const value = 30;
-//value = 32;
-//const value = 35;
-console.log(value);
-var sum = 40;
-sum= 45;
-var sum = 47
-console.log(sum);
- 
-let addition = 6*6 + 12;
-console.log(addition,"sum")
-let subraction = 6*6 - 12;
-console.log(subraction)
-let multiplication = 6*12;
-console.log(multiplication)
-let division = 60/12;
-console.log(division)
+let number1 = 20;
+number1 = 25;
+console.log(number1);
 
-let b= 12;
-b-=3;
-console.log(b)
-let a= 12;
-a+=3;
-console.log(a)
-let c= 12;
-c*=3;
-console.log(c)
-let d= 12;
-d/=3;
-console.log(d)
+const value1 = 30;
+console.log(value1);
 
-# Comparison Operators
+var sum1 = 40;
+sum1 = 45;
+sum1 = 47;
+console.log(sum1);
 
-let number = 20;
-number = 25;
-//let number = 27;
-console.log(number);
+let addition1 = 6 * 6 + 12;
+console.log(addition1, "sum");
 
-const value =30;
-//value = 35;
-//const value = 37;
-console.log(value);
+let subtraction1 = 6 * 6 - 12;
+console.log(subtraction1);
 
-var sum = 40;
-sum = 45;
-var sum = 47;
-console.log(sum);
+let multiplication1 = 6 * 12;
+console.log(multiplication1);
 
-let addition = 6* 6 + 12;
-console.log(addition, "sum");
+let division1 = 60 / 12;
+console.log(division1);
 
-let substract = 45 - 20;
-console.log(substract);
+let b1 = 12;
+b1 -= 3;
+console.log(b1);
+
+let a1 = 12;
+a1 += 3;
+console.log(a1);
+
+let c1 = 12;
+c1 *= 3;
+console.log(c1);
+
+let d1 = 12;
+d1 /= 3;
+console.log(d1);
+
+// Comparison Operators
+
+let number2 = 20;
+number2 = 25;
+console.log(number2);
+
+const value2 = 30;
+console.log(value2);
+
+var sum2 = 40;
+sum2 = 45;
+sum2 = 47;
+console.log(sum2);
+
+let addition2 = 6 * 6 + 12;
+console.log(addition2, "sum");
+
+let subtract2 = 45 - 20;
+console.log(subtract2);
 
 let product = 25 * 25;
 console.log(product);
 
-let division = 27/2;
-console.log(division);
- 
+let division2 = 27 / 2;
+console.log(division2);
+
 let remainder = 35 % 3;
 console.log(remainder);
 
-let a = 10;
-//a = a+20;
-a += 20;
-console.log(10);
+let a2 = 10;
+a2 += 20;
+console.log(a2);
 
-let b =12;
-b -= 3;
-console.log(b);
+let b2 = 12;
+b2 -= 3;
+console.log(b2);
 
-let c=15;
-c*=4;
-console.log(c);
+let c2 = 15;
+c2 *= 4;
+console.log(c2);
 
-let d=36;
-d /= 3;
-console.log(d);
+let d2 = 36;
+d2 /= 3;
+console.log(d2);
 
 let e = 25;
 e %= 4;
 console.log(e);
 
-//JavaScript:Javascript is a high-level interpreted, light-weight programming language mainly used to devetop interactive and dynamic web pages. Along with HTML structure) and CSS (styling) is core technology of the world wide web It is used to respond to user actions the (clicka, keypress, form validations) validation forms manipulate html and css dynamically and communicate with server(AP) develop full stack applications with 20 internationally Advantages of javascript Use both the front end and back technologies Easy to Inam for beginners Huge ecosystem (angular node vue,Run in all modem browsers.High demand in jobs and interviews History of Javascript In the year of 1995, Brendan Eich developed First Javascript, a Netscape company within 10 days JavaScript First Name is Mocha, then live script Now is Javascript-markel name .
-
+// JavaScript is a high-level interpreted, lightweight programming language mainly used to develop interactive and dynamic web pages.
+// Along with HTML (structure) and CSS (styling), it is a core technology of the world wide web.
+// JavaScript is used to respond to user actions (clicks, keypresses, form validation), manipulate HTML and CSS dynamically, and communicate with servers.
+// It can be used to develop full-stack applications and has a huge ecosystem (Angular, Node, Vue) and strong browser support.
 
 let value_1 = 25 >= 22;
 console.log(value_1);
@@ -101,7 +104,7 @@ console.log(value_3);
 let result = 15 == '15';
 console.log(result);
 
-let res = 35 ==="35";
+let res = 35 === "35";
 console.log(res);
 
 let not = 6 != "6";

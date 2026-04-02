@@ -1369,7 +1369,7 @@
         <ul class="navbar-nav gap-3 align-items-lg-center me-3">
           <li><a class="nav-link" href="#hero">Home</a></li>
           <li><a class="nav-link" href="#courses">Courses</a></li>
-          <li><a class="nav-link" href="#payment">Payment</a></li>
+          <li><a class="nav-link" href="#payment">Plans</a></li>
           <li><a class="nav-link" href="#why">About</a></li>
           <li><a class="nav-link" href="#contact">Contact</a></li>
           <li><a class="nav-link nav-cta text-decoration-none" href="#courses">Enroll Now</a></li>
@@ -1648,7 +1648,7 @@
               </div>
               <div class="pay-plus">+</div>
               <div class="pay-box">
-                <div class="pay-box-num">95%</div>
+                <div class="pay-box-num">90%</div>
                 <div class="pay-box-lbl">Easy Monthly EMI</div>
               </div>
             </div>
@@ -1693,87 +1693,6 @@
               </div>
             </div>
 
-            <!-- Registration + Payment Form -->
-            <div class="pay-form-card">
-              <div class="pay-form-title">🔐 Register & Pay to Lock Your Seat</div>
-
-              <div class="pay-form-row">
-                <div class="pay-form-group">
-                  <label>Full Name <span>*</span></label>
-                  <input type="text" class="pay-input" placeholder="Your full name" required>
-                </div>
-                <div class="pay-form-group">
-                  <label>Email <span>*</span></label>
-                  <input type="email" class="pay-input" placeholder="you@email.com" required>
-                </div>
-              </div>
-
-              <div class="pay-form-row">
-                <div class="pay-form-group">
-                  <label>Phone Number <span>*</span></label>
-                  <input type="tel" class="pay-input" placeholder="+91 98765 43210" required>
-                </div>
-                <div class="pay-form-group">
-                  <label>Nearest Branch <span>*</span></label>
-                  <select class="pay-input" required>
-                    <option value="">Select branch...</option>
-                    <option>Vijayawada</option>
-                    <option>Hyderabad</option>
-                    <option>Vizag</option>
-                    <option>Bengaluru</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="pay-form-group">
-                <label>Interested Course <span>*</span></label>
-                <select class="pay-input" required>
-                  <option value="">Select a course...</option>
-                  <option>Python Training — 1 Month</option>
-                  <option>Data Science Training — 6 Months</option>
-                  <option>Full-Stack Python Course — 100 Days</option>
-                  <option>Java Training — 1 Month</option>
-                  <option>Machine Learning Training — 6 Months</option>
-                  <option>Full-Stack Java Course — 100 Days</option>
-                  <option>React JS Training — 1 Month</option>
-                  <option>Data Structures &amp; Algorithms — 3 Months</option>
-                </select>
-              </div>
-
-              <!-- QR + Contact row -->
-              <div class="pay-bottom-row">
-                <div class="qr-box">
-                  <div class="qr-label">// Scan &amp; Pay 10%</div>
-                  <div class="qr-img-wrap">
-                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=upi://pay?pa=codegnan@upi&pn=Codegnan&am=1&cu=INR&tn=CourseFee" alt="QR Code">
-                  </div>
-                  <div class="qr-note">Scan with any UPI app<br>to pay the registration fee</div>
-                  <div class="qr-upi">codegnan@upi</div>
-                </div>
-
-                <div class="pay-contact-box">
-                  <div>
-                    <div class="pay-contact-title">📞 Any Queries?</div>
-                    <div class="pay-contact-sub">Having trouble with payment or need help choosing a course? Call or WhatsApp us directly.</div>
-                  </div>
-                  <div>
-                    <div class="pay-contact-num">
-                      <span>📱</span>
-                      <span>+91 9988776678</span>
-                    </div>
-                    <div class="pay-contact-num">
-                      <span>✉️</span>
-                      <span style="font-size:11px;"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3d5e5259585a535c537d5a505c5451135e5250">[email&#160;protected]</a></span>
-                    </div>
-                    <div class="pay-contact-hours">Mon – Sat · 9 AM to 6:30 PM</div>
-                  </div>
-                </div>
-              </div>
-
-              <button type="submit" class="pay-submit-btn" onclick="this.textContent='✅ Seat Locked! We\'ll contact you shortly.'; this.style.background='linear-gradient(135deg,#00ff88,#00d4ff)'; setTimeout(()=>{this.textContent='Get Started Now →'; this.style.background='';},3000); return false;">
-                Get Started Now →
-              </button>
-            </div>
 
           </div>
         </div>
@@ -2063,6 +1982,117 @@
               <option>Working Professional</option>
             </select>
           </div>
+
+          <!-- QR + Contact box inside modal -->
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:14px;">
+            <div class="qr-box" style="border-radius:10px; border:1px solid var(--border); background:rgba(255,255,255,0.03); padding:16px; display:flex; flex-direction:column; align-items:center; text-align:center;">
+              <div style="font-family:'JetBrains Mono',monospace; font-size:9px; letter-spacing:3px; color:var(--muted); text-transform:uppercase; margin-bottom:10px;">// Scan &amp; Pay 10%</div>
+              <div style="width:100px; height:100px; background:#fff; border-radius:8px; padding:5px; margin-bottom:8px;">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=upi://pay?pa=codegnan@upi&pn=Codegnan&am=1&cu=INR&tn=CourseFee" alt="QR Code" style="width:100%; height:100%; object-fit:contain;">
+              </div>
+              <div style="font-size:11px; color:var(--muted); line-height:1.5;">Scan with any UPI app<br>to pay registration fee</div>
+              <div style="font-family:'JetBrains Mono',monospace; font-size:10px; color:var(--accent); margin-top:5px; letter-spacing:1px;">codegnan@upi</div>
+            </div>
+
+            <div style="background:linear-gradient(135deg,rgba(0,212,255,0.05),rgba(123,47,255,0.06)); border:1px solid rgba(0,212,255,0.15); border-radius:10px; padding:16px; display:flex; flex-direction:column; justify-content:space-between;">
+              <div>
+                <div style="font-family:'Rajdhani',sans-serif; font-size:15px; font-weight:700; color:#fff; margin-bottom:5px;">📞 Any Queries?</div>
+                <div style="font-size:11px; color:var(--muted); line-height:1.6; margin-bottom:12px;">Need help choosing or paying? Call or WhatsApp us directly.</div>
+              </div>
+              <div>
+                <div style="display:flex; align-items:center; gap:8px; background:rgba(0,212,255,0.08); border:1px solid rgba(0,212,255,0.2); border-radius:7px; padding:9px 12px; margin-bottom:7px;">
+                  <span>📱</span>
+                  <span style="font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--accent);">+91 9988776678</span>
+                </div>
+                <div style="display:flex; align-items:center; gap:8px; background:rgba(0,212,255,0.08); border:1px solid rgba(0,212,255,0.2); border-radius:7px; padding:9px 12px; margin-bottom:7px;">
+                  <span>✉️</span>
+                  <span style="font-family:'JetBrains Mono',monospace; font-size:10px; color:var(--accent);"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f3909c9796949d929db3949e929a9fdd909c9e">[email&#160;protected]</a></span>
+                </div>
+                <div style="font-size:10px; color:var(--muted); font-family:'JetBrains Mono',monospace; letter-spacing:1px;">Mon – Sat · 9 AM to 6:30 PM</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Get Started Now button below QR -->
+          <button type="button" class="modal-submit-btn" style="margin-bottom:14px;" onclick="this.textContent='✅ Seat Locked! We\'ll contact you shortly.'; this.style.background='linear-gradient(135deg,#00ff88,#00d4ff)'; this.style.color='#050810'; setTimeout(()=>{this.textContent='Get Started Now →'; this.style.background=''; this.style.color='';},2500);">
+            Get Started Now →
+          </button>
+
           <div class="form-group">
             <label>Message</label>
-            <textarea class="form-control-modal" rows="4" placeholder="Any specific questions or details you'd like to share?"></textarea>
+            <textarea class="form-control-modal" placeholder="Tell us your goals or any questions..."></textarea>
+          </div>
+          <button type="submit" class="modal-submit-btn" id="form-submit-btn">Send Message →</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const targets = document.querySelectorAll('.h-stat-num');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if(e.isIntersecting) {
+            e.target.style.opacity = '0';
+            setTimeout(() => {
+              e.target.style.transition = 'opacity 0.5s';
+              e.target.style.opacity = '1';
+            }, 200);
+          }
+        });
+      });
+      targets.forEach(t => observer.observe(t));
+
+      const cards = document.querySelectorAll('.course-card, .feature-item');
+      const revealObs = new IntersectionObserver((entries) => {
+        entries.forEach((e, i) => {
+          if(e.isIntersecting) {
+            setTimeout(() => {
+              e.target.style.opacity = '1';
+              e.target.style.transform = 'translateY(0)';
+            }, i * 60);
+          }
+        });
+      }, { threshold: 0.1 });
+
+      cards.forEach(c => {
+        c.style.opacity = '0';
+        c.style.transform = 'translateY(30px)';
+        c.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        revealObs.observe(c);
+      });
+
+      document.querySelectorAll('.card-enroll').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const card = btn.closest('.course-card');
+          const courseName = card.querySelector('.card-title').textContent.trim();
+          document.getElementById('modal-course').value = courseName;
+          document.getElementById('enroll-modal').classList.add('active');
+          document.body.style.overflow = 'hidden';
+        });
+      });
+
+      function closeModal() {
+        document.getElementById('enroll-modal').classList.remove('active');
+        document.body.style.overflow = '';
+      }
+      document.getElementById('modal-close').addEventListener('click', closeModal);
+      document.getElementById('enroll-modal').addEventListener('click', function(e) {
+        if (e.target === this) closeModal();
+      });
+      document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+      document.getElementById('enroll-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const btn = document.getElementById('form-submit-btn');
+        btn.textContent = '✅ Message Sent!';
+        btn.style.background = 'linear-gradient(135deg, #00ff88, #00d4ff)';
+        btn.style.color = '#050810';
+        setTimeout(() => { closeModal(); btn.textContent = 'Send Message →'; btn.style.background = ''; btn.style.color = ''; this.reset(); }, 2200);
+      });
+    });
+  </script>
+</body>
+</html>
