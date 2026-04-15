@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Attributes</title>
+</head>
+<body>
+    <h2> DOM Attributes</h2>
+    <form>
+        <input type="Email" placeholder="Enter Your Name"/><br><br>
+    </form>
+    <script>
+        let input=document.querySelector("input");
+        let result=input.getAttribute("type");
+        console.log(result);
+        input.setAttribute("type","password")
+        input.setAttribute("placeholder","Enter Your password");
+        //input.placeholder="Enter Your password";
+        //input.removeAttribute("placeholder");
+    </script>  
+</body>
+</html>

@@ -1,3 +1,6 @@
+<!-- "# Document Object Model (DOM): s a programming interface that represents an HTML document as a tree structure.
+It allows JavaScript to access, modify, add, and delete elements dynamically". -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,17 +11,50 @@
 <body>
     <h2 id="text">Welcome To JavaScript</h2>
     <div>
-        <p>Element Getting By Class</p>
-        <p>Element Getting By Tag</p>
-        <p>Element Getting By Queries</p>
+        <p class="desc">Element Getting By Class</p>
+        <p class="desc">Element Getting By Tag</p>
+        <p class="desc">Element Getting By Queries</p>
         <ul>
-            <li>Dom</li>
-            <li>Dom Tree</li>
+            <li class="list">Dom</li>
+            <li class="list">Dom Handling</li>
+            <li class="list">Regular Expressions</li>
+            <li class="list">JavaScript Methods</li>
         </ul>
-        <button>Get Started</button>
-        <script>
-            let element= document.getElementById("text");
-            console.log(element);
-        </script>
+    </div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcx5wGfIafvx0_x0A3bsjahlTtNcsjreEUmWo_knUGKQ&s=10",height="200px" width="200px"
+    alt="not-found" id="image"/><br><br>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6b4Bx7k-ARfqtGhtUMu6X8tkAHVX1kWihnGB-GH_Prg&s=10",height="200px" width="200px"
+    alt="not-found" class="image"/><br><br>
+    <button>Get Started</button>
+    <button>Click</button>
+    <script>
+        let element= document.getElementById("text");//style.color="crimson";
+        console.log(element);
+        element.innerText='Welcome To Dynamic JavaScript';
+        element.style.color='darkblue';
+            
+        let descriptions=document.getElementsByClassName("desc");
+        console.log(descriptions);
+        descriptions[0].innerText='getting element by class name';
+        descriptions[1].innerHTML='getting element by Query Selectors</h3>';
+
+        let button=document.getElementsByTagName("button");
+        button[1].innerText='Join Now';
+
+        let query=document.querySelector("#image");
+        query.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_kx8wyZyCOXbrAqv-3797PK_kEEs7VA380xuwWDfpIQ&s=10"
+        
+        let all=document.querySelectorAll(".list");
+        all[0].innerText='Document Object Model';
+        all[1].innerText='AddEventListeners';
+
+        let un_ord=document.querySelectorAll("#unordered");
+        
+        un_ord.forEach((e)=>{
+            e.style.color='red';
+        })
+
+    </script>
 </body>
 </html>
+
