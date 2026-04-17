@@ -3,29 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Storages in JS: localStorage &amp; sessionStorage</title>
+    <title>Document</title>
 </head>
 <body>
-    <h1>Storages In JS Local &amp; Session</h1>
-    <p>Open browser console (F12) to see logs.</p>
+    <h1>Storages In Js Local & Session</h1>
     <script>
-        // LocalStorage example
-        let data = 'Dhathri sri lekha';
-        localStorage.setItem("username", data);
-        console.log("localStorage username:", localStorage.getItem("username"));
-        // localStorage.removeItem("username"); // Uncomment to remove
+        let data = "Kulakarni Sri Gouri";
+        console.log(typeof(data));
+        let store = localStorage.setItem("username", data);
+        console.log(localStorage.getItem("username"));
+        localStorage.removeItem("username");
+        
+        let data_2 ={
+            employee_company_name : 'Sia Group',
+            salary : '20LPA',
+        }
+        console.log(typeof(data_2));
 
-        // SessionStorage example - Object
-        let data_2 = {
-            employee_company_name: "ABC Corp",
-            salary: "12LPA"
-        };
-        sessionStorage.setItem("obj", JSON.stringify(data_2));
-        console.log("sessionStorage obj:", JSON.parse(sessionStorage.getItem("obj")));
-
-        // Clean up
-        // sessionStorage.removeItem("obj"); // Uncomment to remove
-        // sessionStorage.clear(); // Clear all sessionStorage
+        let store_2 = sessionStorage.setItem("obj", JSON.stringify(data_2));
+        //sessionStorage.removeItem("obj");
+        let result = sessionStorage.getItem("obj");
+        console.log(result);
+        console.log(typeof(result));//string
+        const parasedData = JSON.parse(result);
+        console.log(typeof(parasedData));//object
+        console.log(parasedData.employee_company_name);
+        console.log(parasedData.salary);
+        
     </script>
 </body>
 </html>
