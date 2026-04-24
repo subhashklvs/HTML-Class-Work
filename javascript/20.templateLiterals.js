@@ -35,7 +35,26 @@ const arr_2=[6,7,8,8,9,10];
 console.log([...arr_1,...arr_2]);
 console.log([...new Set([...arr_1,...arr_2])]);
 
-function add(args){
+function add(...args){
     return args
 }
 console.log(add(10,20,30,40,50));
+
+const val=[10,20,30,40,50];
+const map_res=val.map(e =>(
+    e*3
+))
+console.log(map_res);
+const filterRes=val.filter(e=>(
+    res>32
+));
+console.log(filterRes);
+
+const red_val=[100,200,300,400,500];
+const red_res=red_val.reduce((accumulator,currentvalue)=>(
+    accumulator+currentvalue
+),25);
+console.log(red_res);
+red_val.forEach(e=>{
+    console.log(e);
+})
