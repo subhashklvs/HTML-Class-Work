@@ -1,0 +1,12 @@
+{
+    "student": [
+        { "id":1, "name":"Subhash", "age":22 },
+        { "id":2, "name":"Ravi", "age":21 },
+        { "id":3, "name":"Suresh", "age":23 }   
+    ],
+    "courses":[
+        {"id":1,"title":"JavaScript","instructor":"Subhash"},
+        {"id":2,"title":"Python","instructor":"Ravi"},
+        {"id":3,"title":"Java","instructor":"Suresh"}
+    ]
+}
